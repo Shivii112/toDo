@@ -3,18 +3,16 @@ import './App.css';
 import Todolist from './Todolist';
 
 
-const App = () => {
+const App = () =>{
 
 
   const [list, setlist] = useState("");
   const [item, setitem] = useState([]);
   
   const itemevent = (event) =>{
-
-setlist(event.target.value);
+         setlist(event.target.value);
   };
   const itemlist=()=>{
-
   setitem((old) => {
   return[...old,list];
 });
@@ -50,7 +48,7 @@ setlist(event.target.value);
             />;
             })
           }       
-        </ol><sub>by shivam sharma</sub>
+        </ol>
         </div>
       </div>
     </>
